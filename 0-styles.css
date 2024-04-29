@@ -1,0 +1,97 @@
+/* Variables
+  ============================= */
+
+  :root {
+    --text-color: white;
+  }
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+  /* header
+      ============================= */
+
+.background-container {
+	background-image: url("./images/headphones_hero_1.jpg");
+	height: 800px;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	gap: 50px 620px;
+	padding: 30px;
+}
+
+.header-links a {
+	text-decoration: none;
+	color: var(--text-color);
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.header-links {
+	display: flex;
+	justify-content: space-around;
+	gap: 40px;
+}
+
+header {
+	height: 32px;
+	width: 71%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+header img {
+	height: 32px;
+	width: 161px;
+}
+
+  /* header
+      ============================= */
+
+#hero {
+	height: 313px;
+	width: 637px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: var(--text-color);
+	margin-top: 270px;
+}
+
+#hero h1 {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#hero h2 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+#hero p {
+	font-size: 16px;
+	margin-top: 80px;
+	line-height: 26px;
+}
+
+#hero button {
+	background-color: #FF6565;
+	border: none;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 14px;
+	border-radius: 24px;
+	width: 162px;
+	height: 44px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	color: var(--text-color)
+}
