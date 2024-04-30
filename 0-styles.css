@@ -61,6 +61,8 @@ header img {
 	.navbar-menu {
 		display: none;
 		flex: 1;
+		flex-grow: 2;
+		align-self: flex-end;
 	  }
 	header .nav {
 		flex-direction: column;
@@ -85,8 +87,8 @@ header img {
   header .menu-icon .navicon {
 	background: var(--text-color);
 	display: block;
-	width: 2rem;
-	height: .2rem;
+	width: 1.5rem;
+	height: 0.18rem;
 	position: relative;
 	transition: background .2s ease-out;
   }
@@ -95,7 +97,7 @@ header img {
   header .menu-icon .navicon::after {
 	content: "";
 	display: block;
-	width: 100%;
+	width: 2rem;
 	height: 100%;
 	position: absolute;
 	background: var(--text-color);
@@ -116,8 +118,8 @@ header img {
 
   .menu-btn:checked ~ .navbar-menu {
 	display: block;
-	flex-grow: 2;
-	align-self: flex-end;
+
+
 	order: 3;
   }
 
@@ -151,7 +153,8 @@ header img {
 		background: var(--color-black);
 		margin-left: 0;
 		margin-right: 0;
-		padding: 4rem 0;
+		padding: 1rem;
+		padding-top: 2.5rem;
 		gap: 0.5rem 4rem;
 		justify-content: left;
 		flex-wrap: wrap;
@@ -217,3 +220,9 @@ header img {
 #hero button:hover {
 	opacity: 0.9;
 }
+
+@media only screen and (max-width: 480px) {
+	#hero {
+		margin-top: 220px;
+	  }
+  }
