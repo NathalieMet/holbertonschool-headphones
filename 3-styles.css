@@ -1,7 +1,7 @@
 /* Variables
   ============================= */
 
-  :root {
+:root {
 	--text-color: white;
 	--text-hover: #FF6565;
 }
@@ -447,15 +447,15 @@ header .menu-btn:checked~.menu-icon .navicon::after {
 }
 
 #our-results .sub-container {
-	box-sizing : border-box;
-	position : relative;
-	width : 170px;
-	height : 156px;
-	background-color : var(--text-hover);
-	margin : 35px 0;
+	box-sizing: border-box;
+	position: relative;
+	width: 170px;
+	height: 156px;
+	background-color: var(--text-hover);
+	margin: 35px 0;
 	clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 	justify-content: center;
-  }
+}
 
 #our-results h2 {
 	font-size: 46px;
@@ -475,6 +475,7 @@ header .menu-btn:checked~.menu-icon .navicon::after {
 		max-width: 60%;
 		gap: 0 5rem;
 	}
+
 	#our-results {
 		height: auto;
 		width: auto;
@@ -484,174 +485,196 @@ header .menu-btn:checked~.menu-icon .navicon::after {
 
 @media only screen and (max-width: 767px) {
 	#our-results .top-img {
-	background-image: url("./images/headphones_hero_2.jpg");
-	height: 650px;
-	width: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin-bottom: -12rem;
+		background-image: url("./images/headphones_hero_2.jpg");
+		height: 650px;
+		width: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		margin-bottom: -12rem;
 	}
+
 	#our-results {
 		background-color: #071629;
 		background-image: none;
 	}
 }
 
- /*** FORM ***/
+/*** FORM ***/
 /* Comment section
     ============================= */
 
-	.post-comments {
-		width: 80%;
-		margin: 10rem 0 0 auto;
-		padding-left: 7rem;
-	}
-
-	.post-comments .section-title {
-		font-variant: small-caps;
-	}
-
-	/* Basic form
-    ============================= */
-
-	form {
-		display: flex;
-		flex-direction: column;
-		padding: 1rem 0;
-		margin: 0;
-	}
-
-	fieldset {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-start;
-		border: none;
-		padding: 0 0 2rem;
-	}
-
-	label {
-		cursor: pointer;
-		display: block;
-		white-space: nowrap;
-		font-size: 1.4rem;
-		padding: 0 0 .5rem;
-	}
-
-	input[type="text"],
-	input[type="email"],
-	textarea {
-    position: relative;
-	width: 100%;
-	padding: 1.2rem;
-	line-height: 1;
-	border: .1rem solid var(--color-black);
-	background-color: var(--color-white);
-	box-shadow: none;
-	outline: 0;
+#contact-us {
+	text-align: center;
 }
 
-	input[type="text"],
-	input[type="email"] {
-		padding-right: 3rem;
-	}
+#contact-us label {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
 
-	input[type="text"]:focus,
-	input[type="email"]:focus,
-	textarea:focus {
-    border: .1rem solid var(--color-grey);
-	background-color: var(--color-light-grey);
+.visually-hidden:not(:focus):not(:active) {
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	white-space: nowrap;
+}
+
+#contact-us h1 {
+	font-size: 32px;
+	font-weight: 600;
+	margin-top: 6rem;
+}
+
+/* Basic form
+    ============================= */
+
+
+
+fieldset {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border: none;
+	padding: 0 0 2rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+	position: relative;
+	width: 21rem;
+	padding: 1.2rem;
+	line-height: 1;
+	border: none;
+	outline: 0;
+	border-bottom: 1px solid #979797;
+	padding-right: 3rem;
+	padding-left: 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+	border-bottom: .1rem solid #979797;
+	/* Couleur de la bordure au focus */
 }
 
 ::placeholder {
-	font-style: italic;
-	font-size: var(--font-size-small);
-  }
+	font-weight: 600;
+	font-size: 14px;
+	color: black;
+}
 
-  /* Form group
+/* Form group
 ============================= */
 
-  .form-group {
+.form-group {
 	padding: 1rem;
 	margin: 0;
-	background-color: var(--color-white);
-  }
+}
 
-  .form-group:focus-within {
-	background-color: var(--color-light-grey);
+/* Form field
+============================= */
+
+.form-field-container {
+	position: relative;
+}
+
+.form-field-icon {
+	font-style: normal;
+}
+
+/* Form help
+============================= */
+
+.form-group .form-help {
+	margin: 0;
+	line-height: 1.3;
+	letter-spacing: .019rem;
+	color: gray;
+	font-size: 14px;
+	max-height: 0;
 	transition: .3s;
-  }
+	overflow: hidden;
+}
 
-  /* Form field
-============================= */
+.form-group:focus-within .form-help {
+	max-height: 20rem;
+	margin: .4rem 0 0;
+}
 
-	.form-field-container {
-		position: relative;
-	}
-
-	.form-field-icon {
-		font-style: normal;
-	}
-
-	/* Form help
-============================= */
-
-	.form-group .form-help {
-		margin: 0;
-		line-height: 1.3;
-		letter-spacing: .019rem;
-		color: var(--color-dark-grey);
-		font-size: var(--font-size-small);
-		max-height: 0;
-		transition: .3s;
-		overflow: hidden;
-	}
-
-	.form-group:focus-within .form-help {
-		max-height: 20rem;
-		margin:  .4rem 0 0;
-	  }
-
-	  /* Form error handling
+/* Form error handling
 ============================= */
 
 /* The following code is used to place the icon in the after pseudo element. Because after and before are not possible in an input, we need to use a span that will be positioned on the right of our input. */
 
-input:not(:placeholder-shown) ~ .form-field-icon::after {
+input:not(:placeholder-shown)~.form-field-icon::after {
 	height: 100%;
 	right: 0;
 	pointer-events: none;
 	position: absolute;
 	top: 0;
 	width: 1.3em;
-  }
+}
 
-  /* Because inputs are invalid by default, we need to be careful and show the icon when we are not in focus and when when the input is not empty (placeholder-shown). Careful with this one because it is not supported everywhere. */
+/* Because inputs are invalid by default, we need to be careful and show the icon when we are not in focus and when when the input is not empty (placeholder-shown). Careful with this one because it is not supported everywhere. */
 
-  input:required:invalid:not(:focus):not(:placeholder-shown) ~ .form-field-icon::after {
+input:required:invalid:not(:focus):not(:placeholder-shown)~.form-field-icon::after {
 	content: '✘';
-	color: var(--error-color);
-  }
+	color: red;
+}
 
-  input:required:valid ~ .form-field-icon::after {
+input:required:valid~.form-field-icon::after {
 	content: '✔';
-	color: var(--valid-color);
-  }
+	color: green;
+}
 
-  /* We want to hide the helper text when we are not in focus. The tilte allows us to select a sibling element in CSS */
+/* We want to hide the helper text when we are not in focus. The tilte allows us to select a sibling element in CSS */
 
-  input:required:valid ~ .form-help {
+input:required:valid~.form-help {
 	max-height: 0;
-  }
+}
 
-  /* Showing a border in a different color is good but not enough. For accessibility purposes, we added an icon when the input is valid or invalid to have a visual distinction that is not only color based.*/
+/* Showing a border in a different color is good but not enough. For accessibility purposes, we added an icon when the input is valid or invalid to have a visual distinction that is not only color based.*/
 
-  input:required:invalid:not(:focus):not(:placeholder-shown),
-  textarea:invalid:not(:focus):not(:placeholder-shown) {
+input:required:invalid:not(:focus):not(:placeholder-shown),
+textarea:invalid:not(:focus):not(:placeholder-shown) {
 	border: 0.1rem solid var(--error-color);
-  }
+}
 
-  input:required:valid:not(:placeholder-shown),
-  textarea:valid:not(:placeholder-shown) {
+input:required:valid:not(:placeholder-shown),
+textarea:valid:not(:placeholder-shown) {
 	border: 0.1rem solid var(--valid-color);
-  }
+}
+
+#contact-us button {
+	background-color: #FF6565;
+	border: none;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 14px;
+	border-radius: 24px;
+	width: 162px;
+	height: 44px;
+	margin-left: auto;
+	margin-right: auto;
+	color: var(--text-color);
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+}
+
+@media only screen and (max-width: 480px) {
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 90%;
+	padding-right: 0;
+}
+}
