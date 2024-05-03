@@ -744,3 +744,7 @@ footer .container {
 	padding-top: 3rem;
 }
 }
+
+footer a {
+	text-decoration: none;
+}
